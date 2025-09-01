@@ -25,19 +25,19 @@ gpu_mem_512=128
 gpu_mem_1024=128
 
 # enable uart
-uart_enable=1
+enable_uart=1
 
 #enable sdio
-dtoverlay=sdio,poll_once=on
+#dtoverlay=sdio,poll_once=on
 
 #setup sub 50MHz SDIO clock
-dtparam=sdio_overclock=42
+#dtparam=sdio_overclock=42
 
 #enable uart5
-dtoverlay=uart5
+dtoverlay=uart0,uart1,uart5
 
 #enable morse gpio configuration
-dtoverlay=mm_wlan
+#dtoverlay=mm_wlan
 
 #adds morse-ps device tree
 dtoverlay=morse-ps
